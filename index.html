@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA BOTANICA — Artisanal Living &amp; Mindful Essentials</title>
+  <!-- Google Fonts: Editorial Serif + Clean Sans (non-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  </noscript>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- 1. Top Announcement Bar -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <div class="container announcement-inner">
+      <span class="announcement-text">
+        ✦ Complimentary Pan-India Delivery on orders over &#x20B9;500 &bull; Artisanal Batch 2026 &bull; Demo Coupon:
+        <strong>BOTANICAL</strong> ✦
+      </span>
+      <div class="announcement-links">
+        <a href="#benefits-section" class="announcement-link">Our Guarantee</a>
+        <span class="sep">&bull;</span>
+        <a href="#newsletter-section" class="announcement-link">The Journal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Header & Main Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Brand Logo & Identity -->
+      <a href="#" class="brand-link" aria-label="Aura Botanica Homepage">
+        <div class="brand-monogram">AB</div>
+        <div class="brand-text">
+          <span class="logo">Aura Botanica</span>
+          <span class="tagline">Artisanal Living &bull; Mini Checkout</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#hero-section" class="nav-link active">Home</a></li>
+          <li><a href="#products-section" class="nav-link">Shop</a></li>
+          <li><a href="#products-section" class="nav-link">Categories</a></li>
+          <li><a href="#products-section" class="nav-link">New Arrivals</a></li>
+          <li><a href="#benefits-section" class="nav-link">Values</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities: Search, Wishlist, Bag, Profile -->
+      <div class="header-utilities">
+
+        <!-- Search Trigger / Quick Search Bar -->
+        <div class="header-search-wrap">
+          <svg class="util-icon search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="search" id="search-input" class="header-search-input" placeholder="Search essentials..."
+            aria-label="Search products" />
+        </div>
+
+        <!-- Subtle Header Utility Divider -->
+        <span class="header-divider" aria-hidden="true"></span>
+
+        <!-- Wishlist Button -->
+        <button class="util-btn" id="nav-wishlist-btn" aria-label="View Wishlist" title="Your Wishlist">
+          <svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
+          </svg>
+          <span class="util-badge wishlist-badge" id="wishlist-count">0</span>
+        </button>
+
+        <!-- Shopping Bag Trigger -->
+        <a href="#cart-section" class="util-btn header-cart-indicator" id="nav-cart-btn" aria-label="Shopping Bag"
+          title="Shopping Bag">
+          <svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+            <path d="M3 6h18" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span class="header-cart-badge" id="header-cart-badge">0</span>
+        </a>
+
+        <!-- Account / Profile (Demo) -->
+        <button class="util-btn account-btn" aria-label="Account details" title="Demo Customer Account">
+          <svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 3. Editorial Hero Banner -->
+  <section class="hero-section" id="hero-section" aria-label="Featured Collection Banner">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">Artisanal Living &bull; Handcrafted Season 2026</span>
+        <h1 class="hero-title">Timeless Objects for Mindful Daily Rituals</h1>
+        <p class="hero-description">
+          A thoughtful collection of handcrafted lifestyle instruments. Made with sustainable materials, tactile
+          textures, and quiet, enduring design.
+        </p>
+        <div class="hero-actions">
+          <a href="#products-section" class="btn btn-hero">
+            <span>Explore Collection</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#benefits-section" class="btn btn-hero-secondary">Our Philosophy</a>
+        </div>
+        <div class="hero-badges">
+          <div class="hero-badge-item">
+            <span class="badge-dot"></span> 100% Sustainable Woods &amp; Clays
+          </div>
+          <div class="hero-badge-item">
+            <span class="badge-dot"></span> Hand-Inspected in Bengaluru
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <!-- Stylized Boutique Art Vector Illustration -->
+          <svg class="hero-svg" viewBox="0 0 460 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="460" height="360" rx="20" fill="#FAF8F3" />
+            <!-- Botanical Vase & Shadow -->
+            <ellipse cx="230" cy="310" rx="140" ry="24" fill="#EAE5DC" />
+            <!-- Minimalist Ceramic Vase -->
+            <path
+              d="M190 300C180 250 170 210 210 180C218 174 220 150 220 140H240C240 150 242 174 250 180C290 210 280 250 270 300H190Z"
+              fill="#C47752" />
+            <!-- Neck rim -->
+            <ellipse cx="230" cy="140" rx="12" ry="4" fill="#9C5230" />
+            <!-- Stems and Botanical Leaves -->
+            <path d="M230 140Q210 90 170 40" stroke="#24352D" stroke-width="4" stroke-linecap="round" />
+            <path d="M230 140Q240 70 290 30" stroke="#24352D" stroke-width="4" stroke-linecap="round" />
+            <path d="M230 140V50" stroke="#24352D" stroke-width="3" stroke-linecap="round" />
+            <!-- Leaves (Sage Green & Forest) -->
+            <path d="M170 40C150 45 140 65 160 70C180 75 185 55 170 40Z" fill="#D8DFD0" />
+            <path d="M290 30C310 38 318 58 298 62C278 66 275 48 290 30Z" fill="#24352D" />
+            <path d="M230 50C215 40 210 20 230 15C250 20 245 40 230 50Z" fill="#D8DFD0" />
+            <!-- Decorative Geo Accents -->
+            <circle cx="90" cy="90" r="45" fill="#E8DEC8" fill-opacity="0.4" />
+            <circle cx="370" cy="130" r="28" fill="#C47752" fill-opacity="0.15" />
+            <!-- Craft Badge -->
+            <g transform="translate(40, 240)">
+              <rect width="130" height="50" rx="8" fill="#FFFFFF"
+                filter="drop-shadow(0 4px 12px rgba(36,53,45,0.08))" />
+              <text x="14" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700"
+                fill="#24352D" letter-spacing="1">LIMITED BATCH</text>
+              <text x="14" y="38" font-family="'Cormorant Garamond', serif" font-size="14" font-weight="600"
+                fill="#C47752">Artisanal No. 42</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Customer Trust & Pillars Section -->
+  <section class="benefits-section" id="benefits-section" aria-label="Our Values">
+    <div class="container">
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <h3 class="benefit-title">Pure Artisanal Craft</h3>
+            <p class="benefit-desc">Hand-tested acoustic &amp; lifestyle goods with natural materials.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <h3 class="benefit-title">Complimentary Shipping</h3>
+            <p class="benefit-desc">Reliable express door delivery across India with full tracking.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <h3 class="benefit-title">30-Day Guarantee</h3>
+            <p class="benefit-desc">Unconditional trial period with straightforward returns.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <div class="benefit-text">
+            <h3 class="benefit-title">Safe Demo Checkout</h3>
+            <p class="benefit-desc">End-to-end simulated checkout with duplicate protection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Main Content: Catalog + Cart + Checkout -->
+  <main class="container main-layout" id="main-content">
+
+    <!-- Left Column: Products Section & Discovery Controls -->
+    <section class="section products-section" id="products-section" aria-labelledby="products-heading">
+
+      <!-- Catalog Header & Discovery Controls -->
+      <div class="catalog-header">
+        <div class="catalog-title-group">
+          <span class="catalog-tag">Handpicked Batch</span>
+          <h2 id="products-heading" class="section-title">Curated Essentials</h2>
+          <p class="section-subtitle">Select our two featured lifestyle products</p>
+        </div>
+
+        <!-- Filter & Sorting Bar -->
+        <div class="catalog-controls">
+          <!-- Category Filter Pills -->
+          <div class="category-pills" role="tablist" aria-label="Filter products by category">
+            <button class="cat-pill active" data-category="all" role="tab" aria-selected="true">All (2)</button>
+            <button class="cat-pill" data-category="audio" role="tab" aria-selected="false">Acoustics</button>
+            <button class="cat-pill" data-category="lifestyle" role="tab" aria-selected="false">Living</button>
+          </div>
+
+          <!-- Sort Select -->
+          <div class="sort-wrapper">
+            <label for="sort-select" class="sort-label">Sort:</label>
+            <select id="sort-select" class="sort-select" aria-label="Sort products by price">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Search Status Indicator -->
+      <div id="search-status" class="search-status" hidden></div>
+
+      <!-- Products Grid (Product A & Product B) -->
+      <div class="products-grid" id="products-grid">
+
+        <!-- ================= PRODUCT A ================= -->
+        <article class="product-card" data-product-id="A" data-category="audio" data-price="500">
+
+          <!-- Visual & Media Container -->
+          <div class="card-visual card-visual-a">
+            <!-- Badge -->
+            <span class="product-badge badge-bestseller">Best Seller</span>
+
+            <!-- Wishlist Heart Button -->
+            <button class="card-wishlist-btn" data-product-id="A" aria-label="Save Product A to wishlist"
+              title="Save to wishlist">
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+              </svg>
+            </button>
+
+            <!-- Quick View Button -->
+            <button class="card-quick-view-btn" data-product-id="A" aria-label="Quick view Product A">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span>Quick View</span>
+            </button>
+
+            <!-- High-End Stylized Walnut Headphone Illustration -->
+            <div class="product-media-circle">
+              <svg class="product-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Glow -->
+                <circle cx="50" cy="50" r="44" fill="#FAF8F3" stroke="#D8DFD0" stroke-width="2" />
+                <!-- Headband Arc -->
+                <path d="M28 54C28 36 36 24 50 24C64 24 72 36 72 54" stroke="#24352D" stroke-width="5"
+                  stroke-linecap="round" />
+                <!-- Inner Cushion Arch -->
+                <path d="M34 50C34 38 40 30 50 30C60 30 66 38 66 50" stroke="#C47752" stroke-width="2.5"
+                  stroke-linecap="round" />
+                <!-- Earcups (Walnut Wood & Brass) -->
+                <rect x="20" y="52" width="15" height="26" rx="7" fill="#C47752" />
+                <rect x="65" y="52" width="15" height="26" rx="7" fill="#C47752" />
+                <!-- Ear Cushions -->
+                <rect x="23" y="56" width="7" height="18" rx="3.5" fill="#24352D" />
+                <rect x="70" y="56" width="7" height="18" rx="3.5" fill="#24352D" />
+                <!-- Metallic Swivel Pins -->
+                <circle cx="27.5" cy="52" r="3" fill="#D8DFD0" stroke="#24352D" stroke-width="1.5" />
+                <circle cx="72.5" cy="52" r="3" fill="#D8DFD0" stroke="#24352D" stroke-width="1.5" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Product Details Body -->
+          <div class="product-body">
+            <div class="product-meta-row">
+              <span class="product-category">Acoustic Living</span>
+              <span class="stock-pill in-stock">&bull; In Stock (14 left)</span>
+            </div>
+
+            <h3 class="product-name">Product A</h3>
+            <p class="product-subtitle">Walnut Acoustic Studio Headset</p>
+            <p class="product-description">
+              Handcrafted wireless acoustic gear featuring organic walnut earcups, precision active noise isolation, and
+              breathable memory foam.
+            </p>
+
+            <!-- Demo Ratings & Reviews -->
+            <div class="product-rating">
+              <span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+              <span class="rating-score">4.9</span>
+              <span class="rating-count">(142 reviews &bull; Demo)</span>
+            </div>
+
+            <!-- Features Pills -->
+            <div class="product-perks">
+              <span class="perk-pill">⚡ 40h Battery</span>
+              <span class="perk-pill">🌿 Walnut Casing</span>
+              <span class="perk-pill">🔇 ANC Mode</span>
+            </div>
+
+            <!-- Price & Add-To-Cart Footer -->
+            <div class="product-footer">
+              <div class="price-container">
+                <span class="price-label">Price</span>
+                <span class="product-price" data-price="500">&#x20B9;500</span>
+              </div>
+              <button class="btn btn-add" data-product-id="A" data-product-name="Product A" data-product-price="500"
+                aria-label="Add Product A to cart">
+                <svg class="btn-cart-add-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PRODUCT B ================= -->
+        <article class="product-card" data-product-id="B" data-category="lifestyle" data-price="300">
+
+          <!-- Visual & Media Container -->
+          <div class="card-visual card-visual-b">
+            <!-- Badge -->
+            <span class="product-badge badge-popular">Popular Choice</span>
+
+            <!-- Wishlist Heart Button -->
+            <button class="card-wishlist-btn" data-product-id="B" aria-label="Save Product B to wishlist"
+              title="Save to wishlist">
+              <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+              </svg>
+            </button>
+
+            <!-- Quick View Button -->
+            <button class="card-quick-view-btn" data-product-id="B" aria-label="Quick view Product B">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span>Quick View</span>
+            </button>
+
+            <!-- High-End Stylized Ceramic Smart Pack Illustration -->
+            <div class="product-media-circle">
+              <svg class="product-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Glow -->
+                <circle cx="50" cy="50" r="44" fill="#FAF8F3" stroke="#D8DFD0" stroke-width="2" />
+                <!-- Structured Bag Silhouette -->
+                <rect x="26" y="38" width="48" height="42" rx="8" fill="#24352D" />
+                <path d="M38 38V30C38 24.5 42.5 20 48 20H52C57.5 20 62 24.5 62 30V38" stroke="#C47752" stroke-width="4"
+                  stroke-linecap="round" />
+                <!-- Flap and Brass Buckle -->
+                <path d="M26 48C36 54 64 54 74 48V38H26V48Z" fill="#C47752" />
+                <rect x="46" y="47" width="8" height="10" rx="2" fill="#FAF8F3" stroke="#24352D" stroke-width="2" />
+                <line x1="30" y1="64" x2="70" y2="64" stroke="#D8DFD0" stroke-width="1.5" stroke-dasharray="2 3" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Product Details Body -->
+          <div class="product-body">
+            <div class="product-meta-row">
+              <span class="product-category">Mindful Living</span>
+              <span class="stock-pill in-stock">&bull; In Stock (28 left)</span>
+            </div>
+
+            <h3 class="product-name">Product B</h3>
+            <p class="product-subtitle">Terracotta Smart Organizer Pack</p>
+            <p class="product-description">
+              Essential daily organizer pack woven from organic canvas with terracotta finishes, magnetic clasps, and
+              modular gear dividers.
+            </p>
+
+            <!-- Demo Ratings & Reviews -->
+            <div class="product-rating">
+              <span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+              <span class="rating-score">4.8</span>
+              <span class="rating-count">(98 reviews &bull; Demo)</span>
+            </div>
+
+            <!-- Features Pills -->
+            <div class="product-perks">
+              <span class="perk-pill">🛡️ 1-Yr Warranty</span>
+              <span class="perk-pill">💧 Water Repellent</span>
+              <span class="perk-pill">🪡 Organic Twill</span>
+            </div>
+
+            <!-- Price & Add-To-Cart Footer -->
+            <div class="product-footer">
+              <div class="price-container">
+                <span class="price-label">Price</span>
+                <span class="product-price" data-price="300">&#x20B9;300</span>
+              </div>
+              <button class="btn btn-add" data-product-id="B" data-product-name="Product B" data-product-price="300"
+                aria-label="Add Product B to cart">
+                <svg class="btn-cart-add-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Right Column: Shopping Cart + Multi-Step Checkout -->
+    <div class="right-column">
+
+      <!-- ================= CART SECTION ================= -->
+      <section class="section cart-section" id="cart-section" aria-labelledby="cart-heading">
+
+        <div class="cart-title-row">
+          <div class="cart-title-group">
+            <svg class="cart-section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+              <path d="M3 6h18" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <h2 id="cart-heading" class="section-title">Your Cart</h2>
+          </div>
+
+          <div class="cart-actions-header">
+            <span class="cart-badge" id="cart-count" aria-live="polite">0</span>
+            <button class="btn-link-action" id="clear-cart-btn" title="Empty shopping cart" hidden>
+              Clear Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Empty Cart Illustration State -->
+        <div id="cart-empty" class="cart-empty" role="status">
+          <div class="cart-empty-art">
+            <svg class="empty-cart-svg" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="70" cy="70" r="60" fill="#FAF8F3" stroke="#D8DFD0" stroke-width="2" />
+              <!-- Woven Basket Illustration -->
+              <path d="M42 56H98L90 98H50L42 56Z" fill="#F4EFE6" stroke="#C47752" stroke-width="2.5"
+                stroke-linejoin="round" />
+              <path d="M54 56V42C54 34 60 30 70 30C80 30 86 34 86 42V56" stroke="#24352D" stroke-width="3"
+                stroke-linecap="round" />
+              <path d="M46 72H94" stroke="#D8DFD0" stroke-width="2" stroke-dasharray="3 3" />
+              <path d="M48 84H92" stroke="#D8DFD0" stroke-width="2" stroke-dasharray="3 3" />
+              <!-- Botanical sprig falling into cart -->
+              <path d="M70 48Q60 38 64 26" stroke="#24352D" stroke-width="2" stroke-linecap="round" />
+              <ellipse cx="62" cy="28" rx="6" ry="3" fill="#D8DFD0" />
+            </svg>
+          </div>
+          <p class="cart-empty-text">Your cart is empty</p>
+          <p class="cart-empty-hint">Add a product from the left to start your order</p>
+          <a href="#products-section" class="btn btn-empty-cta">Explore Essentials</a>
+        </div>
+
+        <!-- Dynamic Cart Items List -->
+        <ul class="cart-list" id="cart-list" aria-label="Cart items" role="list"></ul>
+
+        <!-- Cart Summary & Cost Breakdown -->
+        <div class="cart-summary" id="cart-summary" hidden>
+          <div class="summary-breakdown">
+
+            <!-- Items Subtotal -->
+            <div class="summary-row">
+              <span class="summary-label">Items Subtotal</span>
+              <span class="summary-val" id="summary-subtotal">&#x20B9;0</span>
+            </div>
+
+            <!-- Standard Shipping -->
+            <div class="summary-row">
+              <span class="summary-label">Standard Shipping</span>
+              <span class="summary-val shipping-free">FREE</span>
+            </div>
+
+            <!-- Estimated Taxes -->
+            <div class="summary-row">
+              <span class="summary-label">Estimated Taxes</span>
+              <span class="summary-val">Included</span>
+            </div>
+
+            <!-- Promotional Discount Row (Dynamic) -->
+            <div class="summary-row summary-discount" id="summary-discount-row" hidden>
+              <span class="summary-label">Promotional Discount (<span id="discount-code-label"></span>)</span>
+              <span class="summary-val discount-val" id="summary-discount">-&#x20B9;0</span>
+            </div>
+
+            <!-- Demo Promo Code Input -->
+            <div class="coupon-box">
+              <div class="coupon-input-wrap">
+                <input type="text" id="coupon-input" class="coupon-input" placeholder="Coupon (e.g. BOTANICAL)"
+                  aria-label="Enter promotional coupon code" />
+                <button type="button" id="apply-coupon-btn" class="btn-apply-coupon">Apply</button>
+                <button type="button" id="remove-coupon-btn" class="btn-remove-coupon" hidden title="Remove coupon">Remove</button>
+              </div>
+              <span id="coupon-feedback" class="coupon-feedback" hidden></span>
+            </div>
+          </div>
+
+          <!-- Total Highlight Row -->
+          <div class="summary-row summary-total">
+            <div class="total-label-wrap">
+              <span class="total-title">Order Total</span>
+              <span class="total-note">Inclusive of all local taxes</span>
+            </div>
+            <span id="order-total" class="order-total-amount" aria-live="polite">&#x20B9;0</span>
+          </div>
+
+          <div class="cart-summary-footer-action">
+            <a href="#products-section" class="continue-shopping-link">&larr; Continue Exploring</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= CHECKOUT SECTION ================= -->
+      <section class="section checkout-section" id="checkout-section" aria-labelledby="checkout-heading">
+
+        <!-- Section Header with Progress Stepper -->
+        <div class="checkout-header-row">
+          <div class="checkout-title-wrap">
+            <svg class="checkout-section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <h2 id="checkout-heading" class="section-title">Checkout Details</h2>
+          </div>
+          <span class="step-indicator">Step 2 of 2</span>
+        </div>
+
+        <!-- Checkout Steps Progress Indicator -->
+        <div class="checkout-steps-nav" aria-label="Checkout Progress">
+          <div class="step-pill completed">
+            <span class="step-num">&#x2713;</span>
+            <span class="step-name">Bag</span>
+          </div>
+          <div class="step-line active"></div>
+          <div class="step-pill current">
+            <span class="step-num">2</span>
+            <span class="step-name">Details</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-pill">
+            <span class="step-num">3</span>
+            <span class="step-name">Payment</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-pill">
+            <span class="step-num">4</span>
+            <span class="step-name">Confirm</span>
+          </div>
+        </div>
+
+        <!-- Main Checkout Form -->
+        <form id="checkout-form" novalidate>
+
+          <!-- 1. Customer Information Group -->
+          <fieldset class="form-fieldset">
+            <legend class="fieldset-legend">1. Customer Information</legend>
+
+            <!-- Customer Name (REQUIRED) -->
+            <div class="form-group">
+              <label class="form-label" for="customer-name">
+                <span>Customer Name</span>
+                <span class="required" aria-hidden="true">*</span>
+              </label>
+              <div class="input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                <input type="text" id="customer-name" name="customer-name" class="form-input"
+                  placeholder="e.g. Alice Kumar" autocomplete="name" aria-required="true"
+                  aria-describedby="name-error" />
+              </div>
+              <span class="field-error" id="name-error" role="alert" aria-live="assertive"></span>
+            </div>
+
+            <!-- Email & Phone (Demo optional) -->
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label class="form-label" for="customer-email">Email Address</label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <input type="email" id="customer-email" name="customer-email" class="form-input"
+                    placeholder="alice@example.com" autocomplete="email" aria-describedby="email-error" />
+                </div>
+                <span class="field-error" id="email-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="customer-phone">Mobile Phone</label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  <input type="tel" id="customer-phone" name="customer-phone" class="form-input"
+                    placeholder="+91 98765 43210" autocomplete="tel" aria-describedby="phone-error" />
+                </div>
+                <span class="field-error" id="phone-error" role="alert" aria-live="assertive"></span>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- 2. Delivery Information Group -->
+          <fieldset class="form-fieldset">
+            <legend class="fieldset-legend">2. Shipping Destination</legend>
+
+            <div class="form-group">
+              <label class="form-label" for="delivery-address">Street Address</label>
+              <input type="text" id="delivery-address" name="delivery-address" class="form-input no-icon"
+                placeholder="Flat / House No., Apartment, Street" autocomplete="street-address" />
+            </div>
+
+            <div class="form-row-3col">
+              <div class="form-group">
+                <label class="form-label" for="delivery-city">City</label>
+                <input type="text" id="delivery-city" name="delivery-city" class="form-input no-icon"
+                  placeholder="Bengaluru" autocomplete="address-level2" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="delivery-state">State</label>
+                <input type="text" id="delivery-state" name="delivery-state" class="form-input no-icon"
+                  placeholder="Karnataka" autocomplete="address-level1" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="delivery-pin">PIN Code</label>
+                <input type="text" id="delivery-pin" name="delivery-pin" class="form-input no-icon" placeholder="560001"
+                  autocomplete="postal-code" aria-describedby="pin-error" />
+                <span class="field-error" id="pin-error" role="alert" aria-live="assertive"></span>
+              </div>
+            </div>
+
+            <!-- Delivery Method Radio Selectors -->
+            <div class="delivery-methods">
+              <span class="delivery-methods-title">Choose Delivery Pace</span>
+
+              <label class="delivery-option active">
+                <input type="radio" name="delivery-method" value="standard" checked />
+                <div class="delivery-option-info">
+                  <div class="del-name">Standard Courier Delivery</div>
+                  <div class="del-meta">Estimated delivery in 2-4 business days</div>
+                </div>
+                <span class="del-price">Free</span>
+              </label>
+
+              <label class="delivery-option">
+                <input type="radio" name="delivery-method" value="express" />
+                <div class="delivery-option-info">
+                  <div class="del-name">Artisanal Express Courier</div>
+                  <div class="del-meta">Priority dispatch with gift sleeve</div>
+                </div>
+                <span class="del-price del-complimentary">Demo Free</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- 3. Payment Method Group (Demo Only) -->
+          <fieldset class="form-fieldset">
+            <legend class="fieldset-legend">3. Payment Selection (Demo Safe)</legend>
+            <div class="payment-methods">
+              <label class="payment-card-option active">
+                <input type="radio" name="payment-method" value="cod" checked />
+                <div class="payment-card-body">
+                  <div class="payment-title">Cash on Delivery (Demo)</div>
+                  <p class="payment-hint">Pay upon physical arrival with cash or UPI scanner.</p>
+                </div>
+              </label>
+
+              <label class="payment-card-option">
+                <input type="radio" name="payment-method" value="upi" />
+                <div class="payment-card-body">
+                  <div class="payment-title">Instant UPI &bull; GPay / PhonePe (Demo)</div>
+                  <p class="payment-hint">Simulated QR code instant checkout.</p>
+                </div>
+              </label>
+
+              <label class="payment-card-option">
+                <input type="radio" name="payment-method" value="card" />
+                <div class="payment-card-body">
+                  <div class="payment-title">Debit / Credit Card (Demo Interface)</div>
+                  <p class="payment-hint">No real financial processing or third-party connections.</p>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Empty Cart & Global Validation Banner -->
+          <div class="validation-banner" id="validation-banner" role="alert" aria-live="assertive" hidden>
+            <div class="validation-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="alert-svg">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <div class="validation-text-content">
+              <strong class="validation-headline">Checkout Notice</strong>
+              <span id="validation-message"></span>
+            </div>
+          </div>
+
+          <!-- Trust Security Bar -->
+          <div class="security-guarantee">
+            <svg class="guarantee-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <span>256-Bit Encrypted Safe Checkout &bull; Zero Spam Guarantee</span>
+          </div>
+
+          <!-- Place Order Button -->
+          <button type="submit" class="btn btn-place-order" id="place-order-btn" aria-label="Place your order">
+            <span class="btn-content-default">
+              <svg class="order-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>Place Order</span>
+            </span>
+          </button>
+        </form>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 6. Editorial Newsletter Section -->
+  <section class="newsletter-section" id="newsletter-section" aria-label="Newsletter Subscription">
+    <div class="container newsletter-inner">
+      <div class="newsletter-text">
+        <span class="newsletter-tag">Artisanal Journal</span>
+        <h2 class="newsletter-title">Subscribe to The Aura Dispatch</h2>
+        <p class="newsletter-desc">Stories on craftsmanship, mindful acoustics, and early private access to limited
+          batch releases.</p>
+      </div>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <div class="newsletter-input-group">
+          <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Your preferred email address"
+            aria-label="Email address for journal" />
+          <button type="submit" id="newsletter-submit-btn" class="btn btn-newsletter">Subscribe</button>
+        </div>
+        <p id="newsletter-error" class="newsletter-error" hidden role="alert"></p>
+        <p id="newsletter-success" class="newsletter-success" hidden>&bull; Welcome to the circle. Check your inbox for our introductory dispatch.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- 7. Professional Boutique Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">Aura Botanica</div>
+        <p class="footer-motto">
+          Dedicated to quiet design, mindful craft, and sustainable everyday objects. Designed in Bengaluru, Karnataka.
+        </p>
+        <span class="footer-demo-badge">Mini Checkout Assignment Demonstration</span>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Collection</h4>
+        <ul class="footer-links">
+          <li><a href="#products-section">Acoustic Gear</a></li>
+          <li><a href="#products-section">Daily Carry</a></li>
+          <li><a href="#products-section">Ceramics &amp; Stone</a></li>
+          <li><a href="#products-section">Limited Batches</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Philosophy</h4>
+        <ul class="footer-links">
+          <li><a href="#benefits-section">Artisanal Sourcing</a></li>
+          <li><a href="#benefits-section">Carbon Offset</a></li>
+          <li><a href="#benefits-section">Care &amp; Repair</a></li>
+          <li><a href="#newsletter-section">The Journal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Customer Care</h4>
+        <ul class="footer-links">
+          <li><a href="#site-header">Order Lookup</a></li>
+          <li><a href="#benefits-section">Shipping Policy</a></li>
+          <li><a href="#benefits-section">Returns &amp; Warranty</a></li>
+          <li><a href="#site-header">Contact Studio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-legal">
+        <span>&copy; 2026 Aura Botanica &bull; Mini Checkout Project. All rights reserved.</span>
+        <div class="legal-links">
+          <a href="#">Privacy Code</a>
+          <span>&bull;</span>
+          <a href="#">Terms of Pure Commerce</a>
+          <span>&bull;</span>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 8. Order Confirmation Modal Receipt -->
+  <div class="overlay" id="confirmation-overlay" hidden aria-modal="true" role="dialog"
+    aria-labelledby="confirmation-title">
+    <div class="confirmation-card">
+      <div class="conf-top-decor"></div>
+
+      <!-- Celebratory Success Seal -->
+      <div class="confirmation-icon-wrap">
+        <svg class="conf-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+
+      <div class="conf-header">
+        <span class="conf-pill">Order Verified</span>
+        <h2 id="confirmation-title" class="confirmation-title">Order Confirmed!</h2>
+        <p class="confirmation-subtitle">
+          Your order has been officially registered with the studio. A digital summary has been prepared below.
+        </p>
+      </div>
+
+      <!-- Transaction Details Receipt -->
+      <div class="confirmation-details">
+        <div class="confirmation-row">
+          <span class="conf-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="conf-row-icon">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Customer
+          </span>
+          <span class="conf-value" id="conf-customer-name"></span>
+        </div>
+
+        <div class="confirmation-row">
+          <span class="conf-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="conf-row-icon">
+              <rect width="16" height="20" x="4" y="2" rx="2" />
+              <line x1="8" y1="6" x2="16" y2="6" />
+              <line x1="8" y1="10" x2="16" y2="10" />
+              <line x1="8" y1="14" x2="12" y2="14" />
+            </svg>
+            Order Reference
+          </span>
+          <span class="conf-value order-ref" id="conf-order-ref"></span>
+        </div>
+
+        <div class="confirmation-row">
+          <span class="conf-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="conf-row-icon">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+              <path d="M12 18V6" />
+            </svg>
+            Total Paid
+          </span>
+          <span class="conf-value conf-total-amount" id="conf-total"></span>
+        </div>
+
+        <div class="confirmation-row">
+          <span class="conf-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="conf-row-icon">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            Date &amp; Time
+          </span>
+          <span class="conf-value" id="conf-datetime"></span>
+        </div>
+
+        <div class="confirmation-row">
+          <span class="conf-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="conf-row-icon">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            </svg>
+            Estimated Delivery
+          </span>
+          <span class="conf-value" id="conf-est-delivery">In 2-4 business days (Demo)</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="conf-actions-group">
+        <button class="btn btn-print-receipt" id="print-receipt-btn" aria-label="Print order receipt">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print Receipt</span>
+        </button>
+
+        <button class="btn btn-new-order" id="new-order-btn" aria-label="Start a new order">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-refresh-icon">
+            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+            <path d="M21 3v5h-5" />
+            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+            <path d="M8 16H3v5" />
+          </svg>
+          <span>Start New Order</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 9. Quick View Product Detail Modal -->
+  <div class="overlay" id="quick-view-overlay" hidden aria-modal="true" role="dialog"
+    aria-labelledby="quick-view-title">
+    <div class="quick-view-card">
+      <button class="modal-close-btn" id="close-quick-view-btn" aria-label="Close product preview">&times;</button>
+      <div class="quick-view-grid">
+        <div class="quick-view-media" id="quick-view-media"></div>
+        <div class="quick-view-info">
+          <span class="product-category" id="quick-view-category"></span>
+          <h2 class="quick-view-title" id="quick-view-title"></h2>
+          <div class="quick-view-price" id="quick-view-price"></div>
+          <p class="quick-view-description" id="quick-view-description"></p>
+          <ul class="quick-view-specs" id="quick-view-specs"></ul>
+
+          <div class="quick-view-action">
+            <button class="btn btn-modal-add" id="quick-view-add-btn">
+              Add to Shopping Bag
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. Floating Toast Notifications Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
